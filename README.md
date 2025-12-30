@@ -1,4 +1,7 @@
 # Chapter_3_ClusterSieve
+
+## PLEASE NOTE - this is a beta version of [SyntenyQC](https://github.com/Tim-Kirkwood/SyntenyQC)
+
 Set up and start pip_env environment as described for Chapter_3_ModuleMapper.  Copy this directory to your local computer.  Choose a BGC query, run using CBLASTER (locally or with CAGECAT).  Do not find intermediate genes (makes no difference and will increase run time).  Under "Advanced", "Binary table", set "Delimeter" to "," (comma).  Can alter other settings acording to your use case.  Once CBLASTER has finished, download the binary file from the results and put in local folder.  Run ClusterSieve_thesis.py - before running, set neighborhood_size (line 108), similarity_filter (line 123) and folders (line 126) variables. Note, multiple binary files can be used as input but they must be the only binary files present in the directory and they must have a filename containing the string in the file_flag variable (dafault '_binary').  Other variables can be left as default (or changed if you want to get all cblaster files written in gbk format for example - see code comments in lines 102 to 133). Will generate a set of filtered genbank files that can be used as input for clinker.
 
 Clinker - Cameron L M Gilchrist, Yit-Heng Chooi, clinker & clustermap.js: automatic generation of gene cluster comparison figures, Bioinformatics, Volume 37, Issue 16, August 2021, Pages 2473–2475, https://doi.org/10.1093/bioinformatics/btab007
